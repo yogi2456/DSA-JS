@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let data = [23, 45, 54, 67, 56, 80, 89];
+        // console.warn(data)
+        // let position = 3;
+
+        // for(let i = position; i < data.length - 1; i++) {
+        //     data[i] = data[i + 1];
+        // }
+        // data.length = data.length-1;
+        // console.warn(data);
+
+
+        function deleteEl() {
+            let data = [23, 45, 67, 86, 56, 12, 34, 90];
+        console.warn(data)
+        let position = document.getElementById("position").value;
+        position = parseInt(position)
+
+        for (let i = position; i < data.length - 1; i++) {
+            data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        console.warn(data);
+        }
+    </script>
+
+    <div>
+        <input type="text" id="position" placeholder="enter the position"/>
+        <button onclick="deleteEl()">Delete Element</button>
+    </div>
+</body>
+</html>

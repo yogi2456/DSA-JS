@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Array Traversing</h1>
+        <input type="text" id="button"/>
+        <button onclick="getElement()">Get Element</button>
+    </div>
+
+    <script>
+
+        let data = [5, 7, 45, 43, 98, 56, 76, 2, 8, 66, 90, 78, 33];
+        const getElement = () => {
+            let el = document.getElementById("button").value;
+            if(el < data.length && typeof parseInt(el) && el > 0) {
+                alert(data[el])
+            } else {
+                alert("your input is invalid")
+            }
+        }
+    </script>
+</body>
+</html>
