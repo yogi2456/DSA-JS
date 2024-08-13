@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max = 5;
+
+        function push(newValue) {
+            if(currentSize >= max) {
+                alert("your stack is full"+newValue)
+            }
+            data[currentSize] = newValue;
+            currentSize+=1;
+        }
+
+        function pop() {
+           if(currentSize > 0) {
+            currentSize-=1;
+            data.length=currentSize;
+           } else {
+            alert("your stack is already empty")
+           }
+        }
+
+        push(20)
+        push(30)
+        push(40)
+        push(50)
+        // push(60)
+        // push(70)
+        pop()
+        // pop()
+        // pop()
+        // pop()
+        // pop()
+        console.log(data)
+    </script>
+</body>
+</html>

@@ -102,3 +102,42 @@
 // }
 
 // deleteEl()
+
+
+// array sorting
+
+// let data = [23, 45, 1, 2, 4, 5, 90, 67, 76, 88, 55];
+
+// function arraySort() {
+//     for(let i = 0; i < data.length; i++) {
+//         for(let j = 0; j < data.length; j++) {
+//             if(data[j] < data[j + 1]) {
+//                 let temp = data[j]
+//                 data[j] = data[j + 1]
+//                 data[j + 1] = temp;
+//             }
+//         }
+//         console.log(data)
+//     }
+// }
+
+// arraySort()
+
+
+// recursion reverse array
+
+// let data = [23, 45, 1, 2, 4, 5, 90, 67, 76, 88, 55];
+// let temp;
+
+// function recursionArray(data, start, end) {
+//     console.log(data)
+//     if(start <= end) {
+//         temp = data[start]
+//         data[start] = data[end]
+//         data[end] = temp;
+//         recursionArray(data, start + 1, end - 1)
+//     }
+//     console.log(data)
+// }
+
+// recursionArray(data, 0, data.length - 1)

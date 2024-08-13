@@ -184,13 +184,69 @@
 
 //  10. recursion
 
-let data = 7;
+// let data = 7;
 
-function factorial(item) {
-    if(item == 0) {
-        return 1;
-    }
-    return item * factorial(item - 1)
-}
+// function factorial(item) {
+//     if(item == 0) {
+//         return 1;
+//     }
+//     return item * factorial(item - 1)
+// }
 
-console.log(factorial(data));
+// console.log(factorial(data));
+
+
+//  13. recursion array reverse
+
+// let data = [23, 45, 67, 56, 44, 33, 22, 11, 88, 99, 45, 34, 22, 90, 98, 77];
+// let temp;
+
+// function reverseArray(data, start, end) {
+//     if(start <= end) {
+//         temp = data[start]
+//         data[start] = data[end]
+//         data[end] = temp;
+//         reverseArray(data, start + 1, end - 1)
+//     }
+//     console.log(data)
+// }
+
+// reverseArray(data, 0, data.length - 1)
+
+
+//  14. stack with push and pop operation
+
+// let data = [];
+// let currentSize = data.length;
+// let max = 5;
+
+// function push(newValue) {
+//     if(currentSize >= max) {
+//         console.log("your stack is full", newValue)
+//     }
+//     data[currentSize] = newValue;
+//     currentSize+=1;
+//     console.log(data)
+// }
+
+// function pop() {
+//     if(currentSize > 0) {
+//         currentSize-=1;
+//         data.length=currentSize
+//     } else {
+//         console.log("your stack is empty")
+//     }
+//     console.log(data)
+// }
+
+// push(20)
+// push(30)
+// push(40)
+// push(50)
+// // push(60)
+// // push(70)
+// // pop()
+// // pop()
+// // pop()
+// // pop()
+// // pop()

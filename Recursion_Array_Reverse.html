@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = [23, 45, 67, 89, 1, 5, 76, 44, 99];
+      let temp;
+
+      function customReverse(data, start, end) {
+        console.log(data)
+        if (start <= end) {
+          temp = data[start];
+          data[start] = data[end];
+          data[end] = temp;
+          customReverse(data, start + 1, end - 1);
+        }
+      }
+
+      customReverse(data, 0, data.length - 1);
+    </script>
+  </body>
+</html>
