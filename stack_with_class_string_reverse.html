@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class stack {
+            item = [];
+            currentSize;
+            constructor() {
+                this.currentSize = this.item.length;
+            }
+            push(newValue) {
+                this.item[this.currentSize] = newValue;
+                this.currentSize++;
+            }
+            pop() {
+                this.lastRemovedItem = this.item[this.currentSize - 1];
+                this.currentSize--;
+                this.item.length = this.currentSize
+                return this.lastRemovedItem;
+            }
+            // display() {
+            //     console.log(item)
+            // }
+            reverseString(value) {
+                for(let i = 0; i < value.length; i++) {
+                    push(value[i])
+                }
+                for(let i = 0; i < value.length; i++) {
+                    value[i] = pop()
+                }
+            }
+
+        let str = "anil";
+        str = str.split("")
+        reverseString(str)
+        console.log(str)
+        }
+
+        // let str = "anil";
+        // str = str.split("")
+        // reverseString(str)
+        // console.log(str)
+    </script>
+</body>
+</html>
